@@ -1,0 +1,15 @@
+.action-card {
+    box-shadow: 6px 6px 13px rgb(0 0 0 / 10%) !important;
+    border-radius: 10px 10px;
+    background-color: #fff;
+    flex: 225px;
+    
+}
+
+.action-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height:70%;
+    padding: 100px;
+}
