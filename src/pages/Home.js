@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import axios from 'axios'
+import ActionCard from '../components/ActionCard'
 
 function Home () {
-  const [coins, setCoins] = useState([])
+  // const [coins, setCoins] = useState([])
 
-  const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false'
+  const url = 'https://api.finage.co.uk/last/stocks/?symbols=AAPL,TSLA,GOGL,AMZN,NVDA,META,NU&apikey=API_KEY62QY4RI0VTOJ7IL0SE1K1VGHO7NNBULI'
 
   useEffect(() => {
     axios.get(url).then((response) => {
-      setCoins(response.data)
-      console.log(response.data[0])
+      console.log(response)
     }).catch((error) => {
       console.log(error)
     })
   }, [])
 
   return (
-      <div>Homeeeeeee</div>
+    <ActionCard />
   )
 }
 
