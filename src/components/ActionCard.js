@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 import React from 'react'
 import './ActionCard.css'
+import PropTypes from 'prop-types'
 
 const ActionCard = ({ actionsUS }) => {
   return (
@@ -16,6 +16,9 @@ const ActionCard = ({ actionsUS }) => {
         </div>
 
   )
+}
+ActionCard.propTypes = {
+  actionsUS: PropTypes.arrayOf(PropTypes.object)
 }
 
 export default ActionCard
