@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(224, 223, 230); */
+}
+
+.icon {
+    font-size: 2rem;
+    color: #6f00ff;
+}
+
+.purple {
+    color: #6f00ff;
+}
