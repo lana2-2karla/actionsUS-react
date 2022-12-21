@@ -7,9 +7,9 @@ const ActionCard = ({ actionsUS }) => {
       <div className='action-container'>
            { actionsUS.map((action, index) => (
             <div key={index} className='action-card'>
-                <p>{action.symbol}</p>
-            <p>Abertura ${action.ask}</p>
-            <p>Baixa ${action.bid}</p>
+              <p className='white'>{action.symbol}</p>
+              <p className='white'>Abertura ${action.ask}</p>
+              <p className='white'>Baixa ${action.bid}</p>
             </div>
            ))
            }
