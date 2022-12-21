@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import ActionCard from '../components/ActionCard'
+import Header from '../components/Header'
 
 function Home () {
   const [actions, setActions] = useState([])
@@ -16,7 +17,10 @@ function Home () {
   }, [])
 
   return (
+    <>
+    <Header />
     <ActionCard actionsUS={actions}/>
+    </>
   )
 }
 
