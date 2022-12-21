@@ -1,18 +1,20 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
+import './ActionCard.css'
 
 const ActionCard = ({ actionsUS }) => {
   return (
-    actionsUS.map((action, index) => (
-        <div key={index}>
-            <div>
+      <div className='action-container'>
+           { actionsUS.map((action, index) => (
+            <div key={index} className='action-card'>
                 <p>{action.symbol}</p>
-            </div>
             <p>Abertura ${action.ask}</p>
             <p>Baixa ${action.bid}</p>
+            </div>
+           ))
+           }
         </div>
 
-    ))
   )
 }
 
