@@ -17,7 +17,7 @@ function Home () {
   return (
     <>
     <Header />
-    <ActionCard actionsUS={actions}/>
+    {actions.length > 0 && <ActionCard actionsUS={actions}/>}
     </>
   )
 }
